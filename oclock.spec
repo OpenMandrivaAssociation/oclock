@@ -36,6 +36,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/oclock
 %{_datadir}/X11/app-defaults/Clock-color
-%{_mandir}/man1/oclock.1x.bz2
+%{_mandir}/man1/oclock.*
 
 
