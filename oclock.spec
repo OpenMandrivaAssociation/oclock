@@ -1,11 +1,10 @@
 Name: oclock
-Version: 1.0.2
-Release: %mkrel 2
+Version: 1.0.3
+Release: 1
 Summary: Round X clock
 Group: Development/X11
-Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: libx11-devel >= 1.0.0
 BuildRequires: libxext-devel >= 1.0.0
@@ -26,14 +25,9 @@ Oclock simply displays the current time on an analog display.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/oclock
 %{_datadir}/X11/app-defaults/Clock-color
 %{_mandir}/man1/oclock.*
