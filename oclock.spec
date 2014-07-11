@@ -1,7 +1,7 @@
 Summary:	Round X clock
 Name:		oclock
 Version:	1.0.3
-Release:	6
+Release:	7
 Group:		Development/X11
 License:	MIT
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
